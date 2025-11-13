@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.sidebar ul li.active,
+.sidebar ul li:hover {
+    background: #555;
+}
+
+/* Main content */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+
+.add-item input, .add-item select {
+    padding: 5px;
+    margin: 5px;
+}
+.add-item button {
+    padding: 6px 10px;
+    margin: 5px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #e2e2e2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li.completed {
+    text-decoration: line-through;
+    background: #c0ffc0;
+}
+.status-select {
+    margin-left: 10px;
+}
